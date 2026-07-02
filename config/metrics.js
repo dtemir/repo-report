@@ -220,4 +220,8 @@ module.exports = {
 		compare: (item, config) => config?.includes(item.issueCreationPolicy),
 		permissions: ['ADMIN', 'MAINTAIN'],
 	},
+	RequireDeploymentsToSucceedBeforeMerging: {
+		extract: (item) => !!getBPRules(item)?.requiresDeployments,
+		permissions: ['ADMIN'],
+	},
 };

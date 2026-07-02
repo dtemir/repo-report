@@ -126,7 +126,8 @@
 					"uniqueItems": true
 				}
 			]
-		}
+		},
+		"RequireDeploymentsToSucceedBeforeMerging": { "type": ["boolean", "null"] }
 	},
 	"type": "object"
 }

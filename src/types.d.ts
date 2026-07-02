@@ -12,6 +12,7 @@ export type BranchProtectionRule = {
 	requiresConversationResolution: boolean;
 	restrictsPushes: boolean;
 	requireLastPushApproval: boolean;
+	requiresDeployments: boolean;
 	requiresStrictStatusChecks: boolean;
 	requiredStatusChecks: RequiredStatusCheck[];
 };

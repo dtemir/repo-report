@@ -163,6 +163,7 @@
 						"defaultBranchRef": {
 							"name": "main",
 							"branchProtectionRule": {
+								"requiresDeployments": true,
 								"requiredStatusChecks": [
 									{
 										"app": {
@@ -190,6 +191,7 @@
 						"defaultBranchRef": {
 							"name": "main",
 							"branchProtectionRule": {
+							"requiresDeployments": true,
 							"requiresStrictStatusChecks": true
 						}
 						},

@@ -46,6 +46,7 @@ const tableOutput = Object.setPrototypeOf(Object.assign([
 		'22.2% (2/9)',
 		'22.2% (2/9)',
 		'88.9% (8/9)',
+		'22.2% (2/9)',
 	],
 	[
 		'name/challenges-book\nname/responsive-design',
@@ -57,6 +58,7 @@ const tableOutput = Object.setPrototypeOf(Object.assign([
 		`${symbols.error}`,
 		`${symbols.error}`,
 		`${symbols.success}`,
+		`${symbols.error}`,
 	],
 	[
 		'name/project-eraser\nname/guidelines-questionnaire\n🔒 name/microservice\nname/media-upload-app',
@@ -68,6 +70,7 @@ const tableOutput = Object.setPrototypeOf(Object.assign([
 		`${symbols.error}`,
 		`${symbols.error}`,
 		`${symbols.success}`,
+		`${symbols.error}`,
 	],
 	[
 		'name/ecma262',
@@ -76,16 +79,6 @@ const tableOutput = Object.setPrototypeOf(Object.assign([
 		`${symbols.success}`,
 		`${symbols.error}`,
 		`${symbols.error}`,
-		`${symbols.error}`,
-		`${symbols.success}`,
-		`${symbols.error}`,
-	],
-	[
-		'name/agendas',
-		`${symbols.success}`,
-		`${symbols.success}`,
-		`${symbols.error}`,
-		`${symbols.success}`,
 		`${symbols.error}`,
 		`${symbols.success}`,
 		`${symbols.error}`,
@@ -99,6 +92,19 @@ const tableOutput = Object.setPrototypeOf(Object.assign([
 		`${symbols.error}`,
 		`${symbols.success}`,
 		`${symbols.success}`,
+		`${symbols.success}`,
+		`${symbols.success}`,
+		`${symbols.error}`,
+	],
+	[
+		'name/agendas',
+		`${symbols.success}`,
+		`${symbols.success}`,
+		`${symbols.error}`,
+		`${symbols.success}`,
+		`${symbols.error}`,
+		`${symbols.success}`,
+		`${symbols.error}`,
 		`${symbols.success}`,
 		`${symbols.success}`,
 	],
@@ -115,6 +121,7 @@ const tableOutput = Object.setPrototypeOf(Object.assign([
 			'RequireBranchesBeUpToDateBeforeMerging',
 			'SponsorshipsEnabled',
 			'IssueCreationPolicy',
+			'RequireDeploymentsToSucceedBeforeMerging',
 		],
 	},
 }), Table.prototype);
@@ -131,6 +138,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'false',
 		'false',
 		'ALL',
+		'false',
 	],
 	[
 		'name/challenges-book',
@@ -143,6 +151,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'false',
 		'false',
 		'ALL',
+		'false',
 	],
 	[
 		'name/responsive-design',
@@ -155,6 +164,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'false',
 		'false',
 		'ALL',
+		'false',
 	],
 	[
 		'name/media-upload-app',
@@ -167,6 +177,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'false',
 		'false',
 		'ALL',
+		'false',
 	],
 	[
 		'name/tc39-ci',
@@ -179,6 +190,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'true',
 		'true',
 		'ALL',
+		'false',
 	],
 	[
 		'name/ecma262',
@@ -191,6 +203,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'false',
 		'true',
 		'COLLABORATORS_ONLY',
+		'true',
 	],
 	[
 		'name/agendas',
@@ -203,6 +216,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'true',
 		'false',
 		'ALL',
+		'true',
 	],
 ], {
 	options: {
@@ -218,6 +232,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 			'RequireBranchesBeUpToDateBeforeMerging',
 			'SponsorshipsEnabled',
 			'IssueCreationPolicy',
+			'RequireDeploymentsToSucceedBeforeMerging',
 		],
 	},
 }), Table.prototype);
@@ -234,6 +249,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 		`${symbols.error} false`,
 		`${symbols.error} false`,
 		`${symbols.success} ALL`,
+		`${symbols.error} false`,
 	],
 	[
 		'name/responsive-design',
@@ -246,6 +262,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 		`${symbols.error} false`,
 		`${symbols.error} false`,
 		`${symbols.success} ALL`,
+		`${symbols.error} false`,
 	],
 	[
 		'name/project-eraser\nname/guidelines-questionnaire\n🔒 name/microservice',
@@ -258,6 +275,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 		`${symbols.error} false`,
 		`${symbols.error} false`,
 		`${symbols.success} ALL`,
+		`${symbols.error} false`,
 	],
 	[
 		'name/media-upload-app',
@@ -270,6 +288,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 		`${symbols.error} false`,
 		`${symbols.error} false`,
 		`${symbols.success} ALL`,
+		`${symbols.error} false`,
 	],
 	[
 		'name/ecma262',
@@ -282,18 +301,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 		`${symbols.error} false`,
 		`${symbols.success} true`,
 		`${symbols.error} COLLABORATORS_ONLY`,
-	],
-	[
-		'name/agendas',
-		`${symbols.success} ADMIN`,
-		`${symbols.success} main`,
-		`${symbols.error} false`,
-		`${symbols.ignore} ---`,
-		`${symbols.success} 100`,
-		`${symbols.error} false`,
 		`${symbols.success} true`,
-		`${symbols.error} false`,
-		`${symbols.success} ALL`,
 	],
 	[
 		'name/tc39-ci',
@@ -306,6 +314,20 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 		`${symbols.success} true`,
 		`${symbols.success} true`,
 		`${symbols.success} ALL`,
+		`${symbols.error} false`,
+	],
+	[
+		'name/agendas',
+		`${symbols.success} ADMIN`,
+		`${symbols.success} main`,
+		`${symbols.error} false`,
+		`${symbols.ignore} ---`,
+		`${symbols.success} 100`,
+		`${symbols.error} false`,
+		`${symbols.success} true`,
+		`${symbols.error} false`,
+		`${symbols.success} ALL`,
+		`${symbols.success} true`,
 	],
 ], {
 	options: {
@@ -321,6 +343,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 			'RequireBranchesBeUpToDateBeforeMerging',
 			'SponsorshipsEnabled',
 			'IssueCreationPolicy',
+			'RequireDeploymentsToSucceedBeforeMerging',
 		],
 	},
 }), Table.prototype);
@@ -354,6 +377,7 @@ const DetailTableColumns = [
 	'RequireBranchesBeUpToDateBeforeMerging',
 	'SponsorshipsEnabled',
 	'IssueCreationPolicy',
+	'RequireDeploymentsToSucceedBeforeMerging',
 ];
 
 const sortedRepositories = require('./sortedRepositories.json');
