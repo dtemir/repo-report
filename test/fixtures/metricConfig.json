@@ -34,6 +34,7 @@
 		"SponsorshipsEnabled": true,
 		"IssueCreationPolicy": ["ALL"],
 		"RequireDeploymentsToSucceedBeforeMerging": true,
-		"AllowUpdateBranch": true
+		"AllowUpdateBranch": true,
+		"UsesProjectsV2": false
 	}
 }

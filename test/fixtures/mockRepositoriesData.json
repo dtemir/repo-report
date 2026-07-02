@@ -13,6 +13,7 @@
 						"nameWithOwner": "name/project-eraser",
 						"issueCreationPolicy": "ALL",
 						"allowUpdateBranch": true,
+						"projectsV2": { "totalCount": 0 },
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "master",
@@ -25,6 +26,7 @@
 						"nameWithOwner": "name/guidelines-questionnaire",
 						"issueCreationPolicy": "ALL",
 						"allowUpdateBranch": true,
+						"projectsV2": { "totalCount": 0 },
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "master",
@@ -37,6 +39,7 @@
 						"nameWithOwner": "name/challenges-book",
 						"issueCreationPolicy": "ALL",
 						"allowUpdateBranch": true,
+						"projectsV2": { "totalCount": 1 },
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "master",
@@ -71,6 +74,7 @@
 						"nameWithOwner": "name/microservice",
 						"issueCreationPolicy": "ALL",
 						"allowUpdateBranch": true,
+						"projectsV2": { "totalCount": 0 },
 						"isPrivate": true,
 						"defaultBranchRef": {
 							"name": "master",
@@ -91,6 +95,7 @@
 						"nameWithOwner": "name/responsive-design",
 						"issueCreationPolicy": "ALL",
 						"allowUpdateBranch": true,
+						"projectsV2": { "totalCount": 1 },
 						"isPrivate": false,
 						"codeOfConduct" : {
 							"name" : "Contributor Covenant"
@@ -112,6 +117,7 @@
 						"nameWithOwner": "name/media-upload-app",
 						"issueCreationPolicy": "ALL",
 						"allowUpdateBranch": true,
+						"projectsV2": { "totalCount": 0 },
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "develop",
@@ -124,6 +130,7 @@
 						"nameWithOwner": "name/tc39-ci",
 						"issueCreationPolicy": "ALL",
 						"allowUpdateBranch": false,
+						"projectsV2": { "totalCount": 0 },
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "main",
@@ -164,6 +171,7 @@
 						"nameWithOwner": "name/ecma262",
 						"issueCreationPolicy": "COLLABORATORS_ONLY",
 						"allowUpdateBranch": false,
+						"projectsV2": { "totalCount": 0 },
 						"isPrivate": false,
 						"codeOfConduct" : {
 							"name" : "Contributor Covenant"
@@ -193,6 +201,7 @@
 						"nameWithOwner": "name/agendas",
 						"issueCreationPolicy": "ALL",
 						"allowUpdateBranch": false,
+						"projectsV2": { "totalCount": 0 },
 						"isPrivate": false,
 						"codeOfConduct" : {
 							"name": "---"

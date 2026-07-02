@@ -59,6 +59,9 @@ function generateQuery(endCursor, { f }, perPage = 20) {
 						hasIssuesEnabled
 						issueCreationPolicy
 						hasProjectsEnabled
+						projectsV2 {
+							totalCount
+						}
 						hasDiscussionsEnabled
 						hasWikiEnabled
 						webCommitSignoffRequired

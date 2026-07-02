@@ -28,6 +28,7 @@ export type Repository = {
 	hasIssuesEnabled: boolean;
 	issueCreationPolicy: string | null;
 	hasProjectsEnabled: boolean;
+	projectsV2: { totalCount: number };
 	hasDiscussionsEnabled: boolean;
 	hasWikiEnabled: boolean;
 	webCommitSignoffRequired: boolean;

@@ -228,4 +228,8 @@ module.exports = {
 		extract: (item) => item.allowUpdateBranch,
 		permissions: ['ADMIN', 'MAINTAIN'],
 	},
+	UsesProjectsV2: {
+		extract: (item) => !!item.projectsV2?.totalCount,
+		permissions: ['ADMIN', 'MAINTAIN', 'WRITE'],
+	},
 };

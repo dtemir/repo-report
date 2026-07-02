@@ -29,6 +29,7 @@ const metrics = getMetrics([
 	'IssueCreationPolicy',
 	'RequireDeploymentsToSucceedBeforeMerging',
 	'AllowUpdateBranch',
+	'UsesProjectsV2',
 ]);
 
 const { nodes: rawNodes } = repositories;
