@@ -25,6 +25,7 @@ export type Repository = {
 	} | null;
 	deleteBranchOnMerge: boolean;
 	hasIssuesEnabled: boolean;
+	issueCreationPolicy: string | null;
 	hasProjectsEnabled: boolean;
 	hasDiscussionsEnabled: boolean;
 	hasWikiEnabled: boolean;
@@ -92,6 +93,7 @@ export type Metrics = Record<string, Metric> & {
 	RequiredBranchProtectionSourcePercentage: Metric<number>;
 	MergeStrategies: Metric<MergeStrategiesConfig>;
 	CodeOfConduct: Metric<boolean | string | readonly (string | null)[]>;
+	IssueCreationPolicy: Metric<readonly (string | null)[]>;
 };
 
 export type Flags = {

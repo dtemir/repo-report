@@ -215,4 +215,9 @@ module.exports = {
 		extract: (item) => !!item.fundingLinks,
 		permissions: ['ADMIN', 'MAINTAIN'],
 	},
+	IssueCreationPolicy: {
+		extract: (item) => item.issueCreationPolicy,
+		compare: (item, config) => config?.includes(item.issueCreationPolicy),
+		permissions: ['ADMIN', 'MAINTAIN'],
+	},
 };

@@ -31,6 +31,7 @@
 		"ReqCodeOwnerReviews": false,
 		"ReqConversationResolution": false,
 		"CodeOfConduct": [null, "Contributor Covenant"],
-		"SponsorshipsEnabled": true
+		"SponsorshipsEnabled": true,
+		"IssueCreationPolicy": ["ALL"]
 	}
 }

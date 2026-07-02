@@ -34,7 +34,8 @@
     "CodeOfConduct": [null, "Contributor Covenant"],
     "RequireLastPushApproval": true,
     "RequireBranchesBeUpToDateBeforeMerging": true,
-    "SponsorshipsEnabled": true
+    "SponsorshipsEnabled": true,
+    "IssueCreationPolicy": ["ALL"]
   },
   "overrides": [],
   "repositories": {

@@ -102,7 +102,31 @@
 		"WikiEnabled": { "type": ["boolean", "null"] },
 		"RequireLastPushApproval": { "type": ["boolean", "null"] },
 		"RequireBranchesBeUpToDateBeforeMerging": { "type": ["boolean", "null"] },
-		"SponsorshipsEnabled": { "type": ["boolean", "null"] }
+		"SponsorshipsEnabled": { "type": ["boolean", "null"] },
+		"IssueCreationPolicy": {
+			"oneOf": [
+				{
+					"enum": [
+						"ALL",
+						"COLLABORATORS_ONLY",
+						null
+					],
+					"type": ["string", "null"]
+				},
+				{
+					"items": {
+						"enum": [
+							"ALL",
+							"COLLABORATORS_ONLY",
+							null
+						],
+						"type": ["string", "null"]
+					},
+					"type": "array",
+					"uniqueItems": true
+				}
+			]
+		}
 	},
 	"type": "object"
 }

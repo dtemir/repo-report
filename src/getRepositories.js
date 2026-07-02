@@ -56,6 +56,7 @@ function generateQuery(endCursor, { f }, perPage = 20) {
 						}
 						deleteBranchOnMerge
 						hasIssuesEnabled
+						issueCreationPolicy
 						hasProjectsEnabled
 						hasDiscussionsEnabled
 						hasWikiEnabled

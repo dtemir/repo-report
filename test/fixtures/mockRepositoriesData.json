@@ -11,6 +11,7 @@
 					{
 						"name": "project-eraser",
 						"nameWithOwner": "name/project-eraser",
+						"issueCreationPolicy": "ALL",
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "master",
@@ -21,6 +22,7 @@
 					{
 						"name": "guidelines-questionnaire",
 						"nameWithOwner": "name/guidelines-questionnaire",
+						"issueCreationPolicy": "ALL",
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "master",
@@ -31,6 +33,7 @@
 					{
 						"name": "challenges-book",
 						"nameWithOwner": "name/challenges-book",
+						"issueCreationPolicy": "ALL",
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "master",
@@ -63,6 +66,7 @@
 					{
 						"name": "microservice",
 						"nameWithOwner": "name/microservice",
+						"issueCreationPolicy": "ALL",
 						"isPrivate": true,
 						"defaultBranchRef": {
 							"name": "master",
@@ -81,6 +85,7 @@
 					{
 						"name": "responsive-design",
 						"nameWithOwner": "name/responsive-design",
+						"issueCreationPolicy": "ALL",
 						"isPrivate": false,
 						"codeOfConduct" : {
 							"name" : "Contributor Covenant"
@@ -100,6 +105,7 @@
 					{
 						"name": "media-upload-app",
 						"nameWithOwner": "name/media-upload-app",
+						"issueCreationPolicy": "ALL",
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "develop",
@@ -110,6 +116,7 @@
 					{
 						"name": "tc39-ci",
 						"nameWithOwner": "name/tc39-ci",
+						"issueCreationPolicy": "ALL",
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "main",
@@ -148,6 +155,7 @@
 					{
 						"name": "ecma262",
 						"nameWithOwner": "name/ecma262",
+						"issueCreationPolicy": "COLLABORATORS_ONLY",
 						"isPrivate": false,
 						"codeOfConduct" : {
 							"name" : "Contributor Covenant"
@@ -174,6 +182,7 @@
 					{
 						"name": "agendas",
 						"nameWithOwner": "name/agendas",
+						"issueCreationPolicy": "ALL",
 						"isPrivate": false,
 						"codeOfConduct" : {
 							"name": "---"

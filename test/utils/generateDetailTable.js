@@ -15,7 +15,19 @@ const {
 
 const getMetrics = require('../../src/metrics');
 
-const metrics = getMetrics(['Repository', 'Access', 'DefBranch', 'isPrivate', 'SecurityPolicyEnabled', 'CodeOfConduct', 'RequiredBranchProtectionSourcePercentage', 'RequireLastPushApproval', 'RequireBranchesBeUpToDateBeforeMerging', 'SponsorshipsEnabled']);
+const metrics = getMetrics([
+	'Repository',
+	'Access',
+	'DefBranch',
+	'isPrivate',
+	'SecurityPolicyEnabled',
+	'CodeOfConduct',
+	'RequiredBranchProtectionSourcePercentage',
+	'RequireLastPushApproval',
+	'RequireBranchesBeUpToDateBeforeMerging',
+	'SponsorshipsEnabled',
+	'IssueCreationPolicy',
+]);
 
 const { nodes: rawNodes } = repositories;
 const nodes = /** @type {import('../../src/types').Repository[]} */ (/** @type {unknown} */ (rawNodes));
