@@ -33,6 +33,7 @@
 		"CodeOfConduct": [null, "Contributor Covenant"],
 		"SponsorshipsEnabled": true,
 		"IssueCreationPolicy": ["ALL"],
-		"RequireDeploymentsToSucceedBeforeMerging": true
+		"RequireDeploymentsToSucceedBeforeMerging": true,
+		"AllowUpdateBranch": true
 	}
 }

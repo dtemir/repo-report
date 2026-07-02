@@ -34,6 +34,7 @@ export type Repository = {
 	forkingAllowed: boolean;
 	isArchived: boolean;
 	autoMergeAllowed: boolean;
+	allowUpdateBranch: boolean;
 	squashMergeCommitTitle: string;
 	isBlankIssuesEnabled: boolean;
 	isFork: boolean;

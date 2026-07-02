@@ -12,6 +12,7 @@
 						"name": "project-eraser",
 						"nameWithOwner": "name/project-eraser",
 						"issueCreationPolicy": "ALL",
+						"allowUpdateBranch": true,
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "master",
@@ -23,6 +24,7 @@
 						"name": "guidelines-questionnaire",
 						"nameWithOwner": "name/guidelines-questionnaire",
 						"issueCreationPolicy": "ALL",
+						"allowUpdateBranch": true,
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "master",
@@ -34,6 +36,7 @@
 						"name": "challenges-book",
 						"nameWithOwner": "name/challenges-book",
 						"issueCreationPolicy": "ALL",
+						"allowUpdateBranch": true,
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "master",
@@ -67,6 +70,7 @@
 						"name": "microservice",
 						"nameWithOwner": "name/microservice",
 						"issueCreationPolicy": "ALL",
+						"allowUpdateBranch": true,
 						"isPrivate": true,
 						"defaultBranchRef": {
 							"name": "master",
@@ -86,6 +90,7 @@
 						"name": "responsive-design",
 						"nameWithOwner": "name/responsive-design",
 						"issueCreationPolicy": "ALL",
+						"allowUpdateBranch": true,
 						"isPrivate": false,
 						"codeOfConduct" : {
 							"name" : "Contributor Covenant"
@@ -106,6 +111,7 @@
 						"name": "media-upload-app",
 						"nameWithOwner": "name/media-upload-app",
 						"issueCreationPolicy": "ALL",
+						"allowUpdateBranch": true,
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "develop",
@@ -117,6 +123,7 @@
 						"name": "tc39-ci",
 						"nameWithOwner": "name/tc39-ci",
 						"issueCreationPolicy": "ALL",
+						"allowUpdateBranch": false,
 						"isPrivate": false,
 						"defaultBranchRef": {
 							"name": "main",
@@ -156,6 +163,7 @@
 						"name": "ecma262",
 						"nameWithOwner": "name/ecma262",
 						"issueCreationPolicy": "COLLABORATORS_ONLY",
+						"allowUpdateBranch": false,
 						"isPrivate": false,
 						"codeOfConduct" : {
 							"name" : "Contributor Covenant"
@@ -184,6 +192,7 @@
 						"name": "agendas",
 						"nameWithOwner": "name/agendas",
 						"issueCreationPolicy": "ALL",
+						"allowUpdateBranch": false,
 						"isPrivate": false,
 						"codeOfConduct" : {
 							"name": "---"

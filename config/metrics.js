@@ -224,4 +224,8 @@ module.exports = {
 		extract: (item) => !!getBPRules(item)?.requiresDeployments,
 		permissions: ['ADMIN'],
 	},
+	AllowUpdateBranch: {
+		extract: (item) => item.allowUpdateBranch,
+		permissions: ['ADMIN', 'MAINTAIN'],
+	},
 };

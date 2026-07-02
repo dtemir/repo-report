@@ -127,7 +127,8 @@
 				}
 			]
 		},
-		"RequireDeploymentsToSucceedBeforeMerging": { "type": ["boolean", "null"] }
+		"RequireDeploymentsToSucceedBeforeMerging": { "type": ["boolean", "null"] },
+		"AllowUpdateBranch": { "type": ["boolean", "null"] }
 	},
 	"type": "object"
 }

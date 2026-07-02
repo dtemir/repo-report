@@ -65,6 +65,7 @@ function generateQuery(endCursor, { f }, perPage = 20) {
 						forkingAllowed
 						isArchived
 						autoMergeAllowed
+						allowUpdateBranch
 						squashMergeCommitTitle
 						isBlankIssuesEnabled
 						isFork

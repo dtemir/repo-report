@@ -36,7 +36,8 @@
     "RequireBranchesBeUpToDateBeforeMerging": true,
     "SponsorshipsEnabled": true,
     "IssueCreationPolicy": ["ALL"],
-    "RequireDeploymentsToSucceedBeforeMerging": true
+    "RequireDeploymentsToSucceedBeforeMerging": true,
+    "AllowUpdateBranch": true
   },
   "overrides": [],
   "repositories": {
