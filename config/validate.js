@@ -80,10 +80,13 @@ module.exports = function validate(config) {
 	const { errors } = schemaValidator.validate(config, configSchema);
 	if (errors && errors.length) {
 		const errorList = errors.map((error) => {
+			const prefix = `config${error.path.length > 0 ? '.' : ''}${error.path.join('.')}`;
 			if (error.name === 'oneOf') {
-				return `config${error.path.length > 0 ? '.' : ''}${error.path.join('.')} has duplicate values`;
+				const hasDuplicateValues = Array.isArray(error.instance)
+					&& new Set(error.instance).size !== error.instance.length;
+				return `${prefix} ${hasDuplicateValues ? 'has duplicate values' : 'has an invalid value'}`;
 			}
-			return `config${error.path.length > 0 ? '.' : ''}${error.path.join('.')} ${error.message}`;
+			return `${prefix} ${error.message}`;
 		});
 		return { error: `Config validation error(s):\n\t${errorList.join('\n\t')}`, valid: false };
 	}
