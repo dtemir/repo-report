@@ -6,6 +6,9 @@
  * @returns {Promise<T>}
  */
 module.exports = async function loadingIndicator(task) {
+	if (!process.stdout.isTTY) {
+		return task();
+	}
 	process.stdout.write('Loading...');
 	const timer = setInterval(
 		() => { process.stdout.write('.'); },
