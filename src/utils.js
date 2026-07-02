@@ -70,12 +70,6 @@ function sanitizeGlob(glob) {
 }
 
 /** @type {(test: string, glob: string | string[]) => boolean} */
-function everyGlobMatch(test, glob) {
-	return /** @type {string[]} */ ([]).concat(glob)
-		.every((pattern) => minimatch(test, pattern));
-}
-
-/** @type {(test: string, glob: string | string[]) => boolean} */
 function anyGlobMatch(test, glob) {
 	return /** @type {string[]} */ ([]).concat(glob)
 		.some((pattern) => minimatch(test, pattern));
@@ -104,7 +98,7 @@ function removeIgnoredRepos(repos, glob) {
 
 /** @type {(repos: Repository[], glob: string | string[]) => Repository[]} */
 function focusRepos(repos, glob) {
-	return repos.filter((repo) => everyGlobMatch(repo.nameWithOwner, glob));
+	return repos.filter((repo) => anyGlobMatch(repo.nameWithOwner, glob));
 }
 
 /** @type {(item: Repository, allMetrics: Record<string, unknown>, value: MetricValue, metric: NamedMetric, options: { actual?: boolean, unactionable?: boolean }) => string | undefined} */

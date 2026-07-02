@@ -1,0 +1,7 @@
+{
+	"metrics": {},
+	"overrides": [],
+	"repositories": {
+		"focus": ["owner/a", "owner/c"]
+	}
+}
