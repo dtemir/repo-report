@@ -35,14 +35,14 @@
 		"pargs": "^1.4.2"
 	},
 	"devDependencies": {
-		"@arethetypeswrong/cli": "^0.18.3",
+		"@arethetypeswrong/cli": "^0.18.4",
 		"@ljharb/eslint-config": "^22.2.3",
 		"@ljharb/tsconfig": "^0.3.2",
 		"@types/cli-table": "^0.3.4",
-		"@types/node": "^22.19.17",
+		"@types/node": "^22.20.0",
 		"@types/tape": "^5.8.1",
 		"auto-changelog": "^2.6.0",
-		"eslint": "^10.5.0",
+		"eslint": "^10.6.0",
 		"fetch-mock": "^12.6.0",
 		"in-publish": "^2.0.1",
 		"mock-property": "^1.1.2",
