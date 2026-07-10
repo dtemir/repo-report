@@ -4,7 +4,7 @@ const { Validator } = require('jsonschema');
 
 const schemaValidator = new Validator();
 
-/** @type {import('../config/metrics.json')} */
+/** @type {typeof import('../config/metrics.json')} */
 const metricSchema = require('../config/metrics.json');
 
 const configSchema = {
