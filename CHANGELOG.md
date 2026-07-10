@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.4.2](https://github.com/ljharb/repo-report/compare/v0.4.1...v0.4.2) - 2026-07-10
+
+### Fixed
+
+- [New] add metric: `UsesProjectsV2` [`#90`](https://github.com/ljharb/repo-report/issues/90)
+- [New] add metric: `AllowUpdateBranch` [`#64`](https://github.com/ljharb/repo-report/issues/64)
+- [New] add metric: `RequireDeploymentsToSucceedBeforeMerging` [`#82`](https://github.com/ljharb/repo-report/issues/82)
+- [New] add metric: `IssueCreationPolicy` [`#115`](https://github.com/ljharb/repo-report/issues/115)
+
+### Commits
+
+- [Fix] `repositories.focus`: keep repos matching any pattern, instead of requiring all [`9f02dd2`](https://github.com/ljharb/repo-report/commit/9f02dd202a9820beba4bd42c85e0b82cf91c8817)
+- [New] add metric: `PullRequestCreationPolicy` [`6b8024a`](https://github.com/ljharb/repo-report/commit/6b8024a06c8a9eee1f64099f0321f87b8c674b82)
+- [Fix] `validate`: only report "duplicate values" for actual duplicates [`14c3c3d`](https://github.com/ljharb/repo-report/commit/14c3c3d647d803b9eb503d5c81d766c00b9bbb80)
+- [Fix] `loadingIndicator`: skip the animation when stdout is not a TTY [`bbed612`](https://github.com/ljharb/repo-report/commit/bbed612f29c7c63b6304870d6be909cab61f40dd)
+- [New] add metric: `PullRequestCreationCapBypassed` [`6243648`](https://github.com/ljharb/repo-report/commit/62436487a0f33757dd321346e78e0a9cd7b73462)
+- [Dev Deps] update `@arethetypeswrong/cli`, `@types/node`, `eslint` [`5adb206`](https://github.com/ljharb/repo-report/commit/5adb206ca450e50c7642b0792afd90c0e35ea1bd)
+- [Dev Deps] update `@arethetypeswrong/cli`, `@types/node` [`8a1da51`](https://github.com/ljharb/repo-report/commit/8a1da51ec9fd36a6140b694dbb43389b8f1902e7)
+- [meta] `npx dt-clean --setup` [`4a9f18f`](https://github.com/ljharb/repo-report/commit/4a9f18fb87388d27b0a4ec4bbe7d9c6ab0048862)
+- [types] fix an error TS v6 ignores but v7 fails on [`e07072e`](https://github.com/ljharb/repo-report/commit/e07072ec6e6e1c15ce48353b91f341bccd0d2df5)
+- [Dev Deps] remove unused dev deps [`d3393ee`](https://github.com/ljharb/repo-report/commit/d3393ee8ff36deee03930f45734eb27ceda3660c)
+
 ## [v0.4.1](https://github.com/ljharb/repo-report/compare/v0.4.0...v0.4.1) - 2026-06-20
 
 ### Commits
