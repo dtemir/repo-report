@@ -58,6 +58,7 @@ function generateQuery(endCursor, { f }, perPage = 20) {
 						deleteBranchOnMerge
 						hasIssuesEnabled
 						issueCreationPolicy
+						pullRequestCreationPolicy
 						hasProjectsEnabled
 						projectsV2 {
 							totalCount

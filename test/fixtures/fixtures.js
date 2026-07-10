@@ -49,6 +49,7 @@ const tableOutput = Object.setPrototypeOf(Object.assign([
 		'22.2% (2/9)',
 		'66.7% (6/9)',
 		'77.8% (7/9)',
+		'55.6% (5/9)',
 	],
 	[
 		'name/challenges-book\nname/responsive-design',
@@ -63,6 +64,7 @@ const tableOutput = Object.setPrototypeOf(Object.assign([
 		`${symbols.error}`,
 		`${symbols.success}`,
 		`${symbols.error}`,
+		`${symbols.success}`,
 	],
 	[
 		'name/project-eraser\nname/guidelines-questionnaire\n🔒 name/microservice\nname/media-upload-app',
@@ -77,6 +79,7 @@ const tableOutput = Object.setPrototypeOf(Object.assign([
 		`${symbols.error}`,
 		`${symbols.success}`,
 		`${symbols.success}`,
+		`${symbols.error}`,
 	],
 	[
 		'name/ecma262',
@@ -90,6 +93,7 @@ const tableOutput = Object.setPrototypeOf(Object.assign([
 		`${symbols.error}`,
 		`${symbols.success}`,
 		`${symbols.error}`,
+		`${symbols.success}`,
 		`${symbols.success}`,
 	],
 	[
@@ -105,6 +109,7 @@ const tableOutput = Object.setPrototypeOf(Object.assign([
 		`${symbols.error}`,
 		`${symbols.error}`,
 		`${symbols.success}`,
+		`${symbols.success}`,
 	],
 	[
 		'name/agendas',
@@ -118,6 +123,7 @@ const tableOutput = Object.setPrototypeOf(Object.assign([
 		`${symbols.success}`,
 		`${symbols.success}`,
 		`${symbols.error}`,
+		`${symbols.success}`,
 		`${symbols.success}`,
 	],
 ], {
@@ -136,6 +142,7 @@ const tableOutput = Object.setPrototypeOf(Object.assign([
 			'RequireDeploymentsToSucceedBeforeMerging',
 			'AllowUpdateBranch',
 			'UsesProjectsV2',
+			'PullRequestCreationPolicy',
 		],
 	},
 }), Table.prototype);
@@ -155,6 +162,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'false',
 		'true',
 		'false',
+		'COLLABORATORS_ONLY',
 	],
 	[
 		'name/challenges-book',
@@ -170,6 +178,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'false',
 		'true',
 		'true',
+		'ALL',
 	],
 	[
 		'name/responsive-design',
@@ -185,6 +194,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'false',
 		'true',
 		'true',
+		'ALL',
 	],
 	[
 		'name/media-upload-app',
@@ -200,6 +210,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'false',
 		'true',
 		'false',
+		'COLLABORATORS_ONLY',
 	],
 	[
 		'name/tc39-ci',
@@ -215,6 +226,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'false',
 		'false',
 		'false',
+		'ALL',
 	],
 	[
 		'name/ecma262',
@@ -230,6 +242,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'true',
 		'false',
 		'false',
+		'ALL',
 	],
 	[
 		'name/agendas',
@@ -245,6 +258,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 		'true',
 		'false',
 		'false',
+		'ALL',
 	],
 ], {
 	options: {
@@ -263,6 +277,7 @@ const tableOutputActual = Object.setPrototypeOf(Object.assign([
 			'RequireDeploymentsToSucceedBeforeMerging',
 			'AllowUpdateBranch',
 			'UsesProjectsV2',
+			'PullRequestCreationPolicy',
 		],
 	},
 }), Table.prototype);
@@ -282,6 +297,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 		`${symbols.error} false`,
 		`${symbols.success} true`,
 		`${symbols.error} true`,
+		`${symbols.success} ALL`,
 	],
 	[
 		'name/responsive-design',
@@ -297,6 +313,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 		`${symbols.error} false`,
 		`${symbols.success} true`,
 		`${symbols.error} true`,
+		`${symbols.success} ALL`,
 	],
 	[
 		'name/project-eraser\nname/guidelines-questionnaire\n🔒 name/microservice',
@@ -312,6 +329,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 		`${symbols.error} false`,
 		`${symbols.success} true`,
 		`${symbols.success} false`,
+		`${symbols.error} COLLABORATORS_ONLY`,
 	],
 	[
 		'name/media-upload-app',
@@ -327,6 +345,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 		`${symbols.error} false`,
 		`${symbols.success} true`,
 		`${symbols.success} false`,
+		`${symbols.error} COLLABORATORS_ONLY`,
 	],
 	[
 		'name/ecma262',
@@ -342,6 +361,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 		`${symbols.success} true`,
 		`${symbols.error} false`,
 		`${symbols.success} false`,
+		`${symbols.success} ALL`,
 	],
 	[
 		'name/tc39-ci',
@@ -357,6 +377,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 		`${symbols.error} false`,
 		`${symbols.error} false`,
 		`${symbols.success} false`,
+		`${symbols.success} ALL`,
 	],
 	[
 		'name/agendas',
@@ -372,6 +393,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 		`${symbols.success} true`,
 		`${symbols.error} false`,
 		`${symbols.success} false`,
+		`${symbols.success} ALL`,
 	],
 ], {
 	options: {
@@ -390,6 +412,7 @@ const tableOutputActualGoodness = Object.setPrototypeOf(Object.assign([
 			'RequireDeploymentsToSucceedBeforeMerging',
 			'AllowUpdateBranch',
 			'UsesProjectsV2',
+			'PullRequestCreationPolicy',
 		],
 	},
 }), Table.prototype);
@@ -426,6 +449,7 @@ const DetailTableColumns = [
 	'RequireDeploymentsToSucceedBeforeMerging',
 	'AllowUpdateBranch',
 	'UsesProjectsV2',
+	'PullRequestCreationPolicy',
 ];
 
 const sortedRepositories = require('./sortedRepositories.json');

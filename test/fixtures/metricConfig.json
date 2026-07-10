@@ -35,6 +35,7 @@
 		"IssueCreationPolicy": ["ALL"],
 		"RequireDeploymentsToSucceedBeforeMerging": true,
 		"AllowUpdateBranch": true,
-		"UsesProjectsV2": false
+		"UsesProjectsV2": false,
+		"PullRequestCreationPolicy": ["ALL"]
 	}
 }

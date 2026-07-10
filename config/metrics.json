@@ -129,7 +129,31 @@
 		},
 		"RequireDeploymentsToSucceedBeforeMerging": { "type": ["boolean", "null"] },
 		"AllowUpdateBranch": { "type": ["boolean", "null"] },
-		"UsesProjectsV2": { "type": ["boolean", "null"] }
+		"UsesProjectsV2": { "type": ["boolean", "null"] },
+		"PullRequestCreationPolicy": {
+			"oneOf": [
+				{
+					"enum": [
+						"ALL",
+						"COLLABORATORS_ONLY",
+						null
+					],
+					"type": ["string", "null"]
+				},
+				{
+					"items": {
+						"enum": [
+							"ALL",
+							"COLLABORATORS_ONLY",
+							null
+						],
+						"type": ["string", "null"]
+					},
+					"type": "array",
+					"uniqueItems": true
+				}
+			]
+		}
 	},
 	"type": "object"
 }

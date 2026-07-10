@@ -232,4 +232,9 @@ module.exports = {
 		extract: (item) => !!item.projectsV2?.totalCount,
 		permissions: ['ADMIN', 'MAINTAIN', 'WRITE'],
 	},
+	PullRequestCreationPolicy: {
+		extract: (item) => item.pullRequestCreationPolicy,
+		compare: (item, config) => config?.includes(item.pullRequestCreationPolicy),
+		permissions: ['ADMIN', 'MAINTAIN'],
+	},
 };
