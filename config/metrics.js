@@ -237,4 +237,8 @@ module.exports = {
 		compare: (item, config) => config?.includes(item.pullRequestCreationPolicy),
 		permissions: ['ADMIN', 'MAINTAIN'],
 	},
+	PullRequestCreationCapBypassed: {
+		extract: (item) => !!item.pullRequestCreationCapConfig?.bypassedUsers.totalCount,
+		permissions: ['ADMIN'],
+	},
 };

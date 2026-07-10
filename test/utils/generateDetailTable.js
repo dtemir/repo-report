@@ -31,6 +31,7 @@ const metrics = getMetrics([
 	'AllowUpdateBranch',
 	'UsesProjectsV2',
 	'PullRequestCreationPolicy',
+	'PullRequestCreationCapBypassed',
 ]);
 
 const { nodes: rawNodes } = repositories;

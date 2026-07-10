@@ -39,7 +39,8 @@
     "RequireDeploymentsToSucceedBeforeMerging": true,
     "AllowUpdateBranch": true,
     "UsesProjectsV2": false,
-    "PullRequestCreationPolicy": ["ALL"]
+    "PullRequestCreationPolicy": ["ALL"],
+    "PullRequestCreationCapBypassed": false
   },
   "overrides": [],
   "repositories": {

@@ -59,6 +59,9 @@ function generateQuery(endCursor, { f }, perPage = 20) {
 						hasIssuesEnabled
 						issueCreationPolicy
 						pullRequestCreationPolicy
+						pullRequestCreationCapConfig {
+							bypassedUsers { totalCount }
+						}
 						hasProjectsEnabled
 						projectsV2 {
 							totalCount

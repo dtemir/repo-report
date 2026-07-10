@@ -28,6 +28,7 @@ export type Repository = {
 	hasIssuesEnabled: boolean;
 	issueCreationPolicy: string | null;
 	pullRequestCreationPolicy: string | null;
+	pullRequestCreationCapConfig: { bypassedUsers: { totalCount: number } } | null;
 	hasProjectsEnabled: boolean;
 	projectsV2: { totalCount: number };
 	hasDiscussionsEnabled: boolean;
